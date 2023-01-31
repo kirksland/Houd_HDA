@@ -5,4 +5,4 @@ All my HDA tools for houdini :
 ## Custom box
 
 a simple box tools who align the box with the ground.
-![this is an image](WIkiHoudini/custom Box.jpg) 
+![this is an image](../WIkiHoudini/custom Box.jpg) 
