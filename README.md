@@ -22,4 +22,7 @@ a simple box tools who align the box with the ground.
   
   ## BuildUSD
   
+  this is a solaris Stage context tool, it take all the mesh inside a input, set all the variation of material and geo, create an asset gallery with vignet, and save in the folder of your choise the usd geo/variation/material and asset
+  
+   <image src="WIkiHoudini/buildUsd.jpg" width= 500>
   
