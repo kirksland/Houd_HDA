@@ -28,19 +28,32 @@ a simple box tools who align the box with the ground.
   
 ## usd converter
 
-**Nom de l'outil :** Convertisseur 3D en USD
+---
 
-**Description :**
-Le Convertisseur 3D en USD est un outil puissant et intuitif conçu pour simplifier la conversion de fichiers 3D en format USD (Universal Scene Description). En entrant simplement le chemin d'accès du dossier contenant tous vos fichiers 3D, cet outil automatise le processus de conversion en attribuant toutes les géométries, matériaux et textures dans un fichier USD consolidé. Une fois la conversion effectuée, vous pouvez sauvegarder ce fichier USD et l'ajouter facilement à votre bibliothèque d'assets, facilitant ainsi la gestion et l'intégration de vos ressources 3D dans divers projets.
+**Tool Name:** USD Converter
 
-**Fonctionnalités :**
-- **Conversion Automatique :** Transformez automatiquement tous les fichiers 3D d'un dossier en un seul fichier USD.
-- **Attribution Intelligente :** Gérez les géométries, matériaux et textures de manière cohérente et précise.
-- **Sauvegarde Facile :** Enregistrez le fichier USD généré pour une utilisation future.
-- **Gestion des Assets :** Intégrez le fichier USD à votre bibliothèque d'assets pour une organisation et une accessibilité optimisées.
+**Description:**
+The USD Converter is a powerful and intuitive tool designed to simplify the conversion of 3D files into the USD (Universal Scene Description) format. By simply inputting the directory path containing your 3D files, this tool automates the conversion process, assigning all geometries, materials, and textures into a single consolidated USD file. Once the conversion is complete, you can save this USD file and easily add it to your asset library, streamlining the management and integration of your 3D resources into various projects.
 
-**Utilisation :**
-1. Entrez le chemin d'accès du dossier contenant vos fichiers 3D.
-2. Laissez l'outil attribuer automatiquement toutes les géométries, matériaux et textures.
-3. Sauvegardez le fichier USD généré.
-4. Ajoutez le fichier USD à votre bibliothèque d'assets pour une utilisation ultérieure.
+**Features:**
+- **Transformations:** Apply transformations such as global scaling, rotation, and alignment to your 3D assets.
+- **Variation Management:** Handle naming variations of your assets seamlessly.
+- **Texture Prefix:** Specify texture prefixes through a detailed form.
+- **Automatic Conversion:** Automatically transform all 3D files in a directory into a single USD file.
+- **Intelligent Assignment:** Manage geometries, materials, and textures consistently and accurately.
+- **Easy Saving:** Save the generated USD file for future use.
+- **Asset Management:** Integrate the USD file into your asset library for optimized organization and accessibility.
+
+**Usage:**
+1. Enter the directory path containing your 3D files.
+2. Let the tool automatically assign all geometries, materials, and textures.
+3. Manage naming variations and apply transformations such as rotation, global scaling, and alignment.
+4. Specify texture prefixes using the detailed form.
+5. Save the generated USD file.
+6. Add the USD file to your asset library for future use.
+
+This tool is ideal for 3D artists, game developers, animators, and anyone working with 3D files, significantly simplifying the workflow and enhancing efficiency.
+
+---
+
+Feel free to make any further adjustments based on specific details or additional features of your tool.
