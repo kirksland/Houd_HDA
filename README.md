@@ -15,12 +15,17 @@ a simple box tools who align the box with the ground.
   <image src="WIkiHoudini/breackDown.jpg" width= 500>
   
   ## File loop 
-  
-  This is a solaris OBJ context tools to prepare usd file variation,  it take all the file inside a folder, and place it on the center of the world, you can align all the mesh fo a better preview, it give you a perfect input for the next tools : BuildUsd
+  ---
+
+  **Tool Name:** File loop
+
+This is a Solaris OBJ context tool for preparing USD file variations. It takes all the files inside a folder and places them at the center of the world. You can align all the meshes for a better preview, providing a perfect input for the next tool: BuildUsd.
   
   <image src="WIkiHoudini/fileLoop.jpg" width= 500>
   
   ## BuildUSD
+  ---
+  **Tool Name:** Build USD
   
   this is a solaris Stage context tool, it take all the mesh inside a input, set all the variation of material and geo, create an asset gallery with vignet, and save in the folder of your choise the usd geo/variation/material and asset
   
