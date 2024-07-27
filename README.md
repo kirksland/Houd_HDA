@@ -54,6 +54,3 @@ The USD Converter is a powerful and intuitive tool designed to simplify the conv
 
 This tool is ideal for 3D artists, game developers, animators, and anyone working with 3D files, significantly simplifying the workflow and enhancing efficiency.
 
----
-
-Feel free to make any further adjustments based on specific details or additional features of your tool.
