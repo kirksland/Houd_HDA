@@ -73,9 +73,4 @@ This Houdini Digital Asset (HDA) tool is designed to streamline the look develop
 - **Lighting**: Adds a light source to complement the HDRI and provide flexible control over the scene's lighting.
 - **Camera Constraints**: Option to lock reference elements to the camera, ensuring a consistent view for shading and lighting tests.
 
-## Installation
-1. Download the `.hda` file.
-2. In Houdini, go to the **Assets** menu and select **Install Asset Library**.
-3. Navigate to the downloaded `.hda` file and open it.
-4. The tool will now be available in your Houdini digital assets.
 
