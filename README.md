@@ -59,3 +59,15 @@ The USD Converter is a powerful and intuitive tool designed to simplify the conv
 
 This tool is ideal for 3D artists, game developers, animators, and anyone working with 3D files, significantly simplifying the workflow and enhancing efficiency.
 
+
+## Look dev tool :
+---
+
+Features
+Color Checker: Helps in calibrating colors and maintaining consistency across renders.
+Reference Spheres:
+Metallic sphere for reflective material reference.
+Matte sphere for diffuse material reference.
+Ground Plane with HDRI Projection: Simulates realistic lighting environments using HDRI maps.
+Lighting: Adds a light source to complement the HDRI and provide flexible control over the scene's lighting.
+Camera Constraints: Option to lock reference elements to the camera, ensuring a consistent view for shading and lighting tests.
