@@ -1,10 +1,10 @@
 # My HDA Library
 
-Bienvenue dans ma librairie d'outils Houdini Digital Assets (HDA), conçue pour faciliter différentes étapes de la production 3D, notamment en Solaris.
+Welcome to my library of Houdini Digital Assets (HDAs), designed to streamline various stages of 3D production, particularly within Solaris.
 
 ---
 
-## Table des matières
+## Table of Contents
 
 - [BreakDown Tool](#breakdown-tool)
 - [File Loop](#file-loop)
@@ -16,10 +16,10 @@ Bienvenue dans ma librairie d'outils Houdini Digital Assets (HDA), conçue pour 
 
 ## BreakDown Tool
 
-> **Contexte :** OBJ  
-> **Fonction :** Préparer la décomposition d'un mesh packé
+> **Context:** SOP  
+> **Function:** Prepare a packed mesh breakdown
 
-Cet outil permet de séparer chaque pièce d’un mesh packé en les déplaçant légèrement à l’aide de leur boîte englobante. Idéal pour des présentations, du debug ou des breakdowns de modélisation.
+This tool separates each piece of a packed mesh by slightly offsetting them based on their bounding boxes. Ideal for presentations, debugging, or modeling breakdowns.
 
 <img src="WIkiHoudini/breackDown.jpg" width="500">
 
@@ -27,10 +27,10 @@ Cet outil permet de séparer chaque pièce d’un mesh packé en les déplaçant
 
 ## File Loop
 
-> **Contexte :** Solaris / OBJ  
-> **Fonction :** Importer un dossier de fichiers USD
+> **Context:** Solaris / OBJ  
+> **Function:** Import a folder of USD files
 
-Ce HDA lit tous les fichiers contenus dans un dossier et les place automatiquement au centre de la scène. Il permet également d’aligner tous les meshes pour une meilleure visualisation. Parfait en amont du prochain outil : `BuildUSD`.
+This HDA reads all the files in a given folder and places them at the center of the scene. It also aligns all meshes for better visualization — perfect as input for the next tool: `BuildUSD`.
 
 <img src="WIkiHoudini/fileLoop.jpg" width="500">
 
@@ -38,10 +38,10 @@ Ce HDA lit tous les fichiers contenus dans un dossier et les place automatiqueme
 
 ## BuildUSD
 
-> **Contexte :** Solaris / Stage  
-> **Fonction :** Créer des variations d’assets USD
+> **Context:** Solaris / Stage  
+> **Function:** Create USD asset variations
 
-`BuildUSD` prend en entrée tous les meshes alignés, applique les variations de matériaux et de géométrie, crée une galerie d’assets avec vignettes, puis sauvegarde automatiquement les fichiers USD dans un dossier au choix (géométries, matériaux, variations, asset final).
+`BuildUSD` takes all aligned meshes, applies geometry and material variations, generates an asset gallery with thumbnails, and automatically saves the USD files in a chosen folder (geometry, materials, variations, final asset).
 
 <img src="WIkiHoudini/buildUsd.jpg" width="500">
 
@@ -49,23 +49,43 @@ Ce HDA lit tous les fichiers contenus dans un dossier et les place automatiqueme
 
 ## USD Converter
 
-> **Contexte :** Solaris  
-> **Fonction :** Convertir et standardiser un dossier 3D en USD
+> **Context:** Solaris  
+> **Function:** Convert and standardize a 3D folder into USD
 
-Le convertisseur USD permet de transformer automatiquement une collection de fichiers 3D en un seul fichier USD prêt à l'emploi. Idéal pour centraliser et intégrer des ressources dans une bibliothèque d’assets.
+The USD Converter automatically transforms a collection of 3D files into a single, ready-to-use USD file. Perfect for consolidating and integrating assets into a unified asset library.
 
-### Fonctionnalités :
-- Transformation globale (scale, rotation, alignement)
-- Gestion des variations de nom
-- Ajout de préfixes sur les textures
-- Assignation automatique de géométries, matériaux et textures
-- Export facile du fichier USD
-- Intégration directe dans une bibliothèque d’assets
+### Features:
+- Global transformations (scaling, rotation, alignment)
+- Name variation handling
+- Texture prefix options
+- Automatic assignment of geometries, materials, and textures
+- Easy USD export
+- Direct integration into your asset library
 
-### Utilisation :
-1. Indiquez le chemin vers votre dossier 3D.
-2. L’outil assigne automatiquement les géométries, matériaux et textures.
-3. Appliquez les transformations nécessaires.
-4. Précisez les préfixes de texture si besoin.
-5. Exportez le fichier USD.
-6. Ajoutez-le à votre asset
+### How to use:
+1. Provide the path to your 3D file directory.
+2. The tool will automatically assign all geometries, materials, and textures.
+3. Apply any required transformations.
+4. Set texture prefixes if needed.
+5. Export the resulting USD file.
+6. Add the USD file to your asset library.
+
+---
+
+## HDA LookDev Tool
+
+> **Context:** OBJ  
+> **Function:** One-click Look Development setup
+
+This HDA sets up a complete scene environment to simplify Look Development.
+
+### Scene Elements:
+- **Color Checker**: For accurate color calibration.
+- **Reference Spheres**:
+  - Metallic sphere (reflective reference)
+  - Matte sphere (diffuse reference)
+- **Ground plane with HDRI projection**: For realistic lighting using an HDRI.
+- **Light Source**: Complements the HDRI with additional control.
+- **Camera Constraints**: Optionally lock reference elements to the camera to maintain consistent framing.
+
+<img src="WIkiHoudini/lookdev_tool.png" width="500">
