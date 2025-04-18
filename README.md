@@ -38,7 +38,7 @@ This HDA reads all the files in a given folder and places them at the center of 
 
 ## BuildUSD
 
-> **Context:** Solaris / Stage  
+> **Context:** LOP 
 > **Function:** Create USD asset variations
 
 `BuildUSD` takes all aligned meshes, applies geometry and material variations, generates an asset gallery with thumbnails, and automatically saves the USD files in a chosen folder (geometry, materials, variations, final asset).
@@ -49,7 +49,7 @@ This HDA reads all the files in a given folder and places them at the center of 
 
 ## USD Converter
 
-> **Context:** Solaris  
+> **Context:** LOP  
 > **Function:** Convert and standardize a 3D folder into USD
 
 The USD Converter automatically transforms a collection of 3D files into a single, ready-to-use USD file. Perfect for consolidating and integrating assets into a unified asset library.
@@ -74,7 +74,7 @@ The USD Converter automatically transforms a collection of 3D files into a singl
 
 ## HDA LookDev Tool
 
-> **Context:** OBJ  
+> **Context:** LOP  
 > **Function:** One-click Look Development setup
 
 This HDA sets up a complete scene environment to simplify Look Development.
