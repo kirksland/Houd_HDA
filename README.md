@@ -14,7 +14,7 @@ Bienvenue dans ma librairie d'outils Houdini Digital Assets (HDA), conçue pour 
 
 ---
 
-# BreakDown Tool
+## BreakDown Tool
 
 > **Contexte :** OBJ  
 > **Fonction :** Préparer la décomposition d'un mesh packé
@@ -25,7 +25,7 @@ Cet outil permet de séparer chaque pièce d’un mesh packé en les déplaçant
 
 ---
 
-#File Loop
+## File Loop
 
 > **Contexte :** Solaris / OBJ  
 > **Fonction :** Importer un dossier de fichiers USD
@@ -36,7 +36,7 @@ Ce HDA lit tous les fichiers contenus dans un dossier et les place automatiqueme
 
 ---
 
-# BuildUSD
+## BuildUSD
 
 > **Contexte :** Solaris / Stage  
 > **Fonction :** Créer des variations d’assets USD
