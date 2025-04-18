@@ -1,76 +1,71 @@
-# Houd_HDA
-All my HDA tools for houdini : 
+# My HDA Library
 
+Bienvenue dans ma librairie d'outils Houdini Digital Assets (HDA), conçue pour faciliter différentes étapes de la production 3D, notamment en Solaris.
 
-## Custom box
-
-a simple box tools who align the box with the ground.
-
-<image src="WIkiHoudini/customBox.jpg" width= 500>
-  
-  ## Breackdown tool
-  
-  Function to translate each piece of a mesh if their pack, with a bounding box 
-  
-  <image src="WIkiHoudini/breackDown.jpg" width= 500>
-  
-  ## File loop 
-  ---
-
-  **Tool Name:** File loop
-
-This is a Solaris OBJ context tool for preparing USD file variations. It takes all the files inside a folder and places them at the center of the world. You can align all the meshes for a better preview, providing a perfect input for the next tool: BuildUsd.
-  
-  <image src="WIkiHoudini/fileLoop.jpg" width= 500>
-  
-  ## BuildUSD
-  ---
-  **Tool Name:** Build USD
-  
-  this is a solaris Stage context tool, it take all the mesh inside a input, set all the variation of material and geo, create an asset gallery with vignet, and save in the folder of your choise the usd geo/variation/material and asset
-  
-   <image src="WIkiHoudini/buildUsd.jpg" width= 500>
-
-     
-## usd converter
 ---
 
-**Tool Name:** USD Converter
+## Table des matières
 
-**Description:**
-The USD Converter is a powerful and intuitive tool designed to simplify the conversion of 3D files into the USD (Universal Scene Description) format. By simply inputting the directory path containing your 3D files, this tool automates the conversion process, assigning all geometries, materials, and textures into a single consolidated USD file. Once the conversion is complete, you can save this USD file and easily add it to your asset library, streamlining the management and integration of your 3D resources into various projects.
+- [BreakDown Tool](#breakdown-tool)
+- [File Loop](#file-loop)
+- [BuildUSD](#buildusd)
+- [USD Converter](#usd-converter)
+- [HDA LookDev Tool](#hda-lookdev-tool)
 
-**Features:**
-- **Transformations:** Apply transformations such as global scaling, rotation, and alignment to your 3D assets.
-- **Variation Management:** Handle naming variations of your assets seamlessly.
-- **Texture Prefix:** Specify texture prefixes through a detailed form.
-- **Automatic Conversion:** Automatically transform all 3D files in a directory into a single USD file.
-- **Intelligent Assignment:** Manage geometries, materials, and textures consistently and accurately.
-- **Easy Saving:** Save the generated USD file for future use.
-- **Asset Management:** Integrate the USD file into your asset library for optimized organization and accessibility.
+---
 
-**Usage:**
-1. Enter the directory path containing your 3D files.
-2. Let the tool automatically assign all geometries, materials, and textures.
-3. Manage naming variations and apply transformations such as rotation, global scaling, and alignment.
-4. Specify texture prefixes using the detailed form.
-5. Save the generated USD file.
-6. Add the USD file to your asset library for future use.
+# BreakDown Tool
 
-This tool is ideal for 3D artists, game developers, animators, and anyone working with 3D files, significantly simplifying the workflow and enhancing efficiency.
+> **Contexte :** OBJ  
+> **Fonction :** Préparer la décomposition d'un mesh packé
 
+Cet outil permet de séparer chaque pièce d’un mesh packé en les déplaçant légèrement à l’aide de leur boîte englobante. Idéal pour des présentations, du debug ou des breakdowns de modélisation.
 
-# HDA LookDev Tool 
+<img src="WIkiHoudini/breackDown.jpg" width="500">
 
-This Houdini Digital Asset (HDA) tool is designed to streamline the look development process by automatically adding essential elements to your scene.
+---
 
-## Features
-- **Color Checker**: Helps in calibrating colors and maintaining consistency across renders.
-- **Reference Spheres**:
-  - **Metallic** sphere for reflective material reference.
-  - **Matte** sphere for diffuse material reference.
-- **Ground Plane with HDRI Projection**: Simulates realistic lighting environments using HDRI maps.
-- **Lighting**: Adds a light source to complement the HDRI and provide flexible control over the scene's lighting.
-- **Camera Constraints**: Option to lock reference elements to the camera, ensuring a consistent view for shading and lighting tests.
+#File Loop
 
-<image src="WIkiHoudini/lookdev_tool.png" width= 500>
+> **Contexte :** Solaris / OBJ  
+> **Fonction :** Importer un dossier de fichiers USD
+
+Ce HDA lit tous les fichiers contenus dans un dossier et les place automatiquement au centre de la scène. Il permet également d’aligner tous les meshes pour une meilleure visualisation. Parfait en amont du prochain outil : `BuildUSD`.
+
+<img src="WIkiHoudini/fileLoop.jpg" width="500">
+
+---
+
+# BuildUSD
+
+> **Contexte :** Solaris / Stage  
+> **Fonction :** Créer des variations d’assets USD
+
+`BuildUSD` prend en entrée tous les meshes alignés, applique les variations de matériaux et de géométrie, crée une galerie d’assets avec vignettes, puis sauvegarde automatiquement les fichiers USD dans un dossier au choix (géométries, matériaux, variations, asset final).
+
+<img src="WIkiHoudini/buildUsd.jpg" width="500">
+
+---
+
+## USD Converter
+
+> **Contexte :** Solaris  
+> **Fonction :** Convertir et standardiser un dossier 3D en USD
+
+Le convertisseur USD permet de transformer automatiquement une collection de fichiers 3D en un seul fichier USD prêt à l'emploi. Idéal pour centraliser et intégrer des ressources dans une bibliothèque d’assets.
+
+### Fonctionnalités :
+- Transformation globale (scale, rotation, alignement)
+- Gestion des variations de nom
+- Ajout de préfixes sur les textures
+- Assignation automatique de géométries, matériaux et textures
+- Export facile du fichier USD
+- Intégration directe dans une bibliothèque d’assets
+
+### Utilisation :
+1. Indiquez le chemin vers votre dossier 3D.
+2. L’outil assigne automatiquement les géométries, matériaux et textures.
+3. Appliquez les transformations nécessaires.
+4. Précisez les préfixes de texture si besoin.
+5. Exportez le fichier USD.
+6. Ajoutez-le à votre asset
